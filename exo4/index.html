@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <title>Formulaire</title>
+</head>
+<body>
+  <form method="get" action="#">
+    <p>
+      <label for="lastname">Nom : </label>
+      <input type="lastname" name="lastname" id="lastname"/>
+    </p>
+    <p>
+      <label for="firstname">Prénom:</label>
+      <input type="firstname" name="firstname" id="firstname"/>
+    </p>
+    <p>
+      <label for="city">Ville :</label>
+      <input type="city" name="city" id="city"/>
+    </p>
+    <button type="submit" onclick="oneClic()">Valider</button>
+  </form>
+  <script type="text/javascript">
+  //definition de la fonction qui affiche les valeurs entrées par l'utilisateur
+  function oneClic(){
+    //déclaration des variables contenant les valeurs saisies par l'utilisateur
+    var lastname=document.getElementById("lastname").value ;
+    var firstname=document.getElementById("firstname").value ;
+    var city=document.getElementById("city").value ;
+    var regexText = 
+    alert("Nom : " + lastname + "\nPrénom : " + firstname + "\nVille : " + city);
+  }
+  </script>
+</body>
+</html>
